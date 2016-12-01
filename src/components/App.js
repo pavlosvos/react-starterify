@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { version } from '../../package.json';
+import TodoInput from './TodoInput';
+import TodoList from './TodoList';
+
 
 const App = ({ children }) => (
   <div>
@@ -12,6 +15,11 @@ const App = ({ children }) => (
     <section>
       {children || 'Welcome to React Starterify Dude'}
     </section>
+    <div className="inputfield">
+      <TodoInput/>
+      <TodoList/>
+    </div>
+
   </div>
 );
 
